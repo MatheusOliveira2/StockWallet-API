@@ -1,1 +1,1 @@
-# StockWallet-API-
+# StockWallet-API
