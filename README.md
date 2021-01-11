@@ -1,3 +1,3 @@
 # StockWallet-API
 
-Projeto destinado ao estudo de typescript
+Projeto destinado ao estudo de Typescript
