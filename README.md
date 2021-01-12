@@ -1,7 +1,7 @@
 <h1 align="center">StockWallet-API</h1>
 
 ## Descrição do Projeto
-<p align="center">API desenvolvida para gerenciar carteira de ações, este projeto será utilizado para aprender Typescript, e TypeORM com node. Além das tecnologias de desenvolvimento será utilizado Jenkins e Sonarqube, atualmente hospedado em minha máquina, no intuito de melhorar a qualidade do software e praticar conceitos de integração contínua e deploy contínuo</p>
+<p align="center">API desenvolvida para gerenciar carteira de ações, este projeto será utilizado para aprender Typescript e TypeORM com node. Além das tecnologias de desenvolvimento será utilizado Jenkins e Sonarqube, atualmente hospedado em minha máquina, no intuito de melhorar a qualidade do software e praticar conceitos de integração contínua e deploy contínuo</p>
 
 ## Requisitos
 
