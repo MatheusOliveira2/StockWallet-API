@@ -4,5 +4,9 @@
   "port": 5432,
   "username": "docker",
   "password": "123456",
-  "database": "stock_waller"
+  "database": "stock_waller",
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
