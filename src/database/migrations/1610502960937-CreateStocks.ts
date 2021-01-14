@@ -12,6 +12,14 @@ export class CreateStocks1610502960937 implements MigrationInterface {
             isPrimary: true,
             generationStrategy: 'uuid',
           },
+          {
+            name: 'code',
+            type: 'varchar',
+          },
+          {
+            name: 'name',
+            type: 'varchar',
+          },
         ],
       })
     );
