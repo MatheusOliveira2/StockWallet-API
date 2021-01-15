@@ -2,9 +2,9 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "docker",
-  "password": "123456",
-  "database": "stock_waller",
+  "username": "postgres",
+  "password": "docker",
+  "database": "stock_wallet",
   "migrations": ["./src/database/migrations/*.ts"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
