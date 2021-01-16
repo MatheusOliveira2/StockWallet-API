@@ -6,16 +6,19 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('stocks')
-class Stock {
+@Entity('users')
+class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
-  code: string;
+  name: string;
 
   @Column()
-  name: string;
+  email: string;
+
+  @Column()
+  password: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -24,4 +27,4 @@ class Stock {
   updated_at: Date;
 }
 
-export default Stock;
+export default User;
