@@ -5,6 +5,7 @@ import CreateUserService from '../services/CreateUserService';
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
 const usersRouter = Router();
+const userController = new UserController();
 
 usersRouter.post('/', async (req, res) => {
   try {
@@ -26,8 +27,6 @@ usersRouter.post('/', async (req, res) => {
   }
 });
 
-usersRouter.get('/', ensureAuthenticated, async (req, res) => {
-  res.json('ListAll');
-});
+usersRouter.get('/', ensureAuthenticated, userController.listAll);
 
 export default usersRouter;
