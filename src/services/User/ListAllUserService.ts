@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import User from '../models/User';
+import User from '../../models/User';
 
 export default class ListAllUserService {
   public async execute(): Promise<User[]> {

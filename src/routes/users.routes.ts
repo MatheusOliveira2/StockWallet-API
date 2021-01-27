@@ -1,31 +1,12 @@
 import { Router } from 'express';
 
 import UserController from '../controllers/UserController';
-import CreateUserService from '../services/CreateUserService';
 import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
 const usersRouter = Router();
 const userController = new UserController();
 
-usersRouter.post('/', async (req, res) => {
-  try {
-    let { name, email, password } = req.body;
-
-    const createUser = new CreateUserService();
-
-    const user = await createUser.execute({
-      name,
-      email,
-      password,
-    });
-
-    delete user.password;
-
-    return res.json(user);
-  } catch (err) {
-    return res.status(400).json({ error: err.message });
-  }
-});
+usersRouter.post('/', ensureAuthenticated, userController.create);
 
 usersRouter.get('/', ensureAuthenticated, userController.listAll);
 
