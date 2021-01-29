@@ -7,6 +7,8 @@ export default class ListAllUserService {
 
     const users = await usersRepository.find();
 
+    users.forEach((user) => delete user.password);
+
     return users;
   }
 }
