@@ -7,5 +7,6 @@ const usersRouter = Router();
 const stockController = new StockController();
 
 usersRouter.post('/', ensureAuthenticated, stockController.create);
+usersRouter.get('/', ensureAuthenticated, stockController.listAll);
 
 export default usersRouter;
