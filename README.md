@@ -30,3 +30,8 @@ As seguintes ferramentas/tecnologias foram usadas na construção do projeto:
 - [Jest]
 - [Jenkins]
 - [Sonarqube]
+
+
+
+
+<img src="https://i2.wp.com/toshitimes.com/wp-content/uploads/2019/02/Abra-Mobile-Wallet-Lets-Users-Invest-into-Stocks-and-ETFs-Using-Crypto.jpg?w=933&ssl=1" alt="Girl in a jacket" width="500" height="600">
